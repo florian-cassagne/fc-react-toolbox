@@ -1,4 +1,3 @@
-import '../Skills/Skills';
 import React from "react";
 
 function LoadingSpinner() {

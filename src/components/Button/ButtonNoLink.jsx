@@ -1,5 +1,5 @@
 import Section from "./Section";
-import {colorPrimary} from "../../../utils/StyleAssets";
+import {colorPrimary} from "../../utils/StyleAssets";
 
 function ButtonNoLink({
                         children,

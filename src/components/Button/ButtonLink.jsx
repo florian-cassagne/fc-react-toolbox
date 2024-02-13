@@ -1,5 +1,5 @@
-import {animationDefault, colorPrimary} from "../../../utils/StyleAssets";
-import {transitionFadeIn} from "../../../utils/PropsAssets";
+import {animationDefault, colorPrimary} from "../../utils/StyleAssets";
+import {transitionFadeIn} from "../../utils/PropsAssets";
 
 function ButtonLink({
                       children,

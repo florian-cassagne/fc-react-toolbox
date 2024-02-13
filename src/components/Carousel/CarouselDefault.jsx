@@ -3,7 +3,7 @@ import Image from "../Image/Image";
 import './carousel-custom.css'
 import 'react-multi-carousel/lib/styles.css';
 import CarouselBase, {updateCarouselItemsOpacity} from "./CarouselBase";
-import {animationDefault} from "../../../utils/StyleAssets";
+import {animationDefault} from "../../utils/StyleAssets";
 
 
 function CarouselDefault({

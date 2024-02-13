@@ -1,5 +1,4 @@
-import {animationDefault, colorImportant} from "../../../utils/StyleAssets";
-
+import {animationDefault, colorImportant} from "../../utils/StyleAssets";
 
 function ButtonClose({className = '', ...props}) {
   return (

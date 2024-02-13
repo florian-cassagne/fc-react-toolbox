@@ -1,4 +1,4 @@
-import {setContent, setIsOpen} from "../../../features/viewerSlice";
+import {setContent, setIsOpen} from "../../features/viewerSlice";
 import {useDispatch} from "react-redux";
 import DivDefault from "../Content/DivDefault";
 import ButtonClose from "../Button/ButtonClose";

@@ -1,4 +1,4 @@
-import {transitionFadeIn} from "../../../utils/PropsAssets";
+import {transitionFadeIn} from "../../utils/PropsAssets";
 import parse from "html-react-parser";
 
 function TitleH1({

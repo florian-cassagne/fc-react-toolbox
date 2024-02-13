@@ -1,5 +1,5 @@
 import React from "react";
-import {transitionFadeIn} from "../../../utils/PropsAssets";
+import {transitionFadeIn} from "../../utils/PropsAssets";
 
 
 function Paragraph({
