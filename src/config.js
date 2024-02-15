@@ -1,4 +1,4 @@
-module.exports = global.config = {
+const config = {
   responsive: {
     breakpoint: {
       xs: 480,
@@ -6,7 +6,9 @@ module.exports = global.config = {
       md: 768,
       lg: 1024,
       xl: 1280,
-      xxl: 1536
-    }
-  }
+      xxl: 1536,
+    },
+  },
 };
+
+export default config;

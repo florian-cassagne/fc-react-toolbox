@@ -3,6 +3,7 @@ import Carousel from 'react-multi-carousel';
 
 import './carousel-custom.css'
 import 'react-multi-carousel/lib/styles.css';
+import config from "../../config";
 
 export function updateCarouselItemsOpacity() {
   let itemsAll = document.querySelectorAll('.react-multi-carousel-item');
@@ -22,13 +23,13 @@ export const responsive = {
   lg: {
     breakpoint: {
       max: 99999,
-      min: global.config.responsive.breakpoint.lg
+      min: config.responsive.breakpoint.lg
     },
     items: 2
   },
   sm: {
     breakpoint: {
-      max: global.config.responsive.breakpoint.lg,
+      max: config.responsive.breakpoint.lg,
       min: 0
     },
     items: 1

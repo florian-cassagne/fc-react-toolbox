@@ -4250,10 +4250,10 @@ export {
   Ia as TitleH2,
   ka as TitleH3,
   Aa as TitleH4,
+  La as TitleH5,
   ja as TitleH6,
   Ua as Util,
   Xa as VariableHelper,
   Fa as Viewer,
-  La as titleH5,
   nn as viewerSlice
 };
