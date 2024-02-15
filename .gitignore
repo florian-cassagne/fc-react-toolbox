@@ -1,8 +1,8 @@
 /node_modules/
 /.idea
 /.github
-.npmrc
-.gitignore
-package.json
-package-lock.json
-vite.config.js
+/.npmrc
+/.gitignore
+/package.json
+/package-lock.json
+/vite.config.js
