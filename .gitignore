@@ -1,3 +1,7 @@
 /node_modules/
 /.gitignore
 /.idea
+.npmrc
+.gitignore
+package.json
+package-lock.json

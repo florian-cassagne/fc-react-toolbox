@@ -20,13 +20,21 @@ import TitleH1 from "./components/Text/TitleH1";
 import TitleH2 from "./components/Text/TitleH2";
 import TitleH3 from "./components/Text/TitleH3";
 import TitleH4 from "./components/Text/TitleH4";
-import titleH5 from "./components/Text/TitleH5";
+import TitleH5 from "./components/Text/TitleH5";
 import TitleH6 from "./components/Text/TitleH6";
 import Viewer from "./components/Viewer/Viewer";
 import ButtonGroupLink from "./components/ButtonGroupLink";
 import IconLink from "./components/IconLink";
 import IFrame from "./components/IFrame";
 import LoadingSpinner from "./components/LoadingSpinner";
+
+import {viewerSlice} from "./features/viewerSlice";
+import * as ArrayHelper from "./helpers/ArrayHelper";
+import * as ObserverHelper from "./helpers/ObserverHelper";
+import * as Util from "./helpers/Util";
+import * as VariableHelper from "./helpers/VariableHelper";
+import * as StyleAssets from "./utils/StyleAssets";
+import * as PropsAssets from "./utils/PropsAssets";
 
 
 export {
@@ -52,11 +60,18 @@ export {
   TitleH2,
   TitleH3,
   TitleH4,
-  titleH5,
+  TitleH5,
   TitleH6,
   Viewer,
   ButtonGroupLink,
   IconLink,
   IFrame,
-  LoadingSpinner
+  LoadingSpinner,
+  viewerSlice,
+  ArrayHelper,
+  ObserverHelper,
+  Util,
+  VariableHelper,
+  StyleAssets,
+  PropsAssets
 };

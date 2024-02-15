@@ -1,7 +1,7 @@
 {
   "name": "@florian-cassagne/fc-react-toolbox",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "",
   "main": "dist/index.umd.js",
   "module": "dist/index.mjs",
