@@ -688,7 +688,7 @@ function Zs({
   className: t = "",
   ...r
 }) {
-  return /* @__PURE__ */ S.jsx(Ut, { className: "w-full md:w-1/2 mr-[25%] ml-[25%]" + t, ...r, children: e });
+  return /* @__PURE__ */ S.jsx(Ut, { className: "w-full md:w-1/2 md:mr-[25%] md:ml-[25%]" + t, ...r, children: e });
 }
 function Qs({
   children: e,
