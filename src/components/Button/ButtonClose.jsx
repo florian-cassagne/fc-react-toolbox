@@ -1,4 +1,5 @@
 import {animationDefault, colorImportant} from "../../utils/StyleAssets";
+import React from "react";
 
 function ButtonClose({className = '', ...props}) {
   return (

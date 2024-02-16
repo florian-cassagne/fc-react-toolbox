@@ -2,6 +2,7 @@ import {setContent, setIsOpen} from "../../features/viewerSlice";
 import {useDispatch} from "react-redux";
 import DivDefault from "../Content/DivDefault";
 import ButtonClose from "../Button/ButtonClose";
+import React from "react";
 
 
 function Viewer({children, item, ...props}) {

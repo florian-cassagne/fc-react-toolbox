@@ -1,5 +1,6 @@
 import {transitionFadeIn} from "../../utils/PropsAssets";
 import parse from "html-react-parser";
+import React from "react";
 
 function TitleH1({
                    children,

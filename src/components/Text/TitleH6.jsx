@@ -1,4 +1,5 @@
 import parse from "html-react-parser";
+import React from "react";
 
 function TitleH6({
                    children,

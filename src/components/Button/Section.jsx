@@ -1,3 +1,4 @@
+import React from "react";
 import {animationDefault} from "../../utils/StyleAssets";
 
 function Section({
@@ -7,7 +8,6 @@ function Section({
                    isLargeMode = false,
                    ...props
                  }) {
-
   if (isLargeMode)
     className += 'w-1/2 mx-auto '
   else
@@ -22,6 +22,5 @@ function Section({
     </div>
   );
 }
-
 
 export default Section;
