@@ -70,10 +70,10 @@ function Li() {
         N.unshift("Warning: " + h), Function.prototype.apply.call(console[s], console, N);
       }
     }
-    var T = !1, w = !1, D = !1, M = !1, I = !1, te;
+    var T = !1, w = !1, D = !1, I = !1, M = !1, te;
     te = Symbol.for("react.module.reference");
     function de(s) {
-      return !!(typeof s == "string" || typeof s == "function" || s === n || s === o || I || s === i || s === c || s === f || M || s === g || T || w || D || typeof s == "object" && s !== null && (s.$$typeof === m || s.$$typeof === d || s.$$typeof === l || s.$$typeof === a || s.$$typeof === u || // This needs to include all possible module reference object
+      return !!(typeof s == "string" || typeof s == "function" || s === n || s === o || M || s === i || s === c || s === f || I || s === g || T || w || D || typeof s == "object" && s !== null && (s.$$typeof === m || s.$$typeof === d || s.$$typeof === l || s.$$typeof === a || s.$$typeof === u || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
@@ -378,7 +378,7 @@ function Li() {
       ref: !0,
       __self: !0,
       __source: !0
-    }, Mr, Ir, Et;
+    }, Ir, Mr, Et;
     Et = {};
     function Ei(s) {
       if (Be.call(s, "ref")) {
@@ -405,7 +405,7 @@ function Li() {
     function wi(s, h) {
       {
         var y = function() {
-          Mr || (Mr = !0, C("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", h));
+          Ir || (Ir = !0, C("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", h));
         };
         y.isReactWarning = !0, Object.defineProperty(s, "key", {
           get: y,
@@ -416,7 +416,7 @@ function Li() {
     function Ci(s, h) {
       {
         var y = function() {
-          Ir || (Ir = !0, C("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", h));
+          Mr || (Mr = !0, C("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", h));
         };
         y.isReactWarning = !0, Object.defineProperty(s, "ref", {
           get: y,
@@ -619,13 +619,13 @@ Check the top-level render call using <` + y + ">.");
         return s === n ? ki(W) : Di(W), W;
       }
     }
-    function Mi(s, h, y) {
+    function Ii(s, h, y) {
       return Vr(s, h, y, !0);
     }
-    function Ii(s, h, y) {
+    function Mi(s, h, y) {
       return Vr(s, h, y, !1);
     }
-    var Ni = Ii, Ai = Mi;
+    var Ni = Mi, Ai = Ii;
     De.Fragment = n, De.jsx = Ni, De.jsxs = Ai;
   }()), De;
 }
@@ -968,8 +968,8 @@ var ke = Q, mo = nt, vo = er, Gr = z, yo = function(e) {
       var D = b[w];
       T = R === D || D <= R && R < D + g;
     } else {
-      var M = v.length - m, I = _ * g;
-      T = (w = M < I ? M : I) === d || w < d && d < w + g && d < v.length - m;
+      var I = v.length - m, M = _ * g;
+      T = (w = I < M ? I : M) === d || w < d && d < w + g && d < v.length - m;
     }
     return l ? ke.cloneElement(l, { index: _, active: T, key: _, onClick: function() {
       return n(w);
@@ -1232,8 +1232,8 @@ var B = Q, L = j, he = it, So = Qt, Hr = ot, To = tr, Ue = z, re = 400, Ur = "tr
   }, t.prototype.render = function() {
     var r = this.props, n = r.deviceType, i = r.arrows, o = r.renderArrowsWhenDisabled, l = r.removeArrowOnDeviceType, a = r.infinite, u = r.containerClass, c = r.sliderClass, f = r.customTransition, d = r.additionalTransfrom, m = r.renderDotsOutside, g = r.renderButtonGroupOutside, v = r.className, p = r.rtl;
     process.env.NODE_ENV !== "production" && L.throwError(this.state, this.props);
-    var b = L.getInitialState(this.state, this.props), R = b.shouldRenderOnSSR, C = b.shouldRenderAtAll, _ = L.isInLeftEnd(this.state), T = L.isInRightEnd(this.state), w = i && !(l && (n && -1 < l.indexOf(n) || this.state.deviceType && -1 < l.indexOf(this.state.deviceType))) && !L.notEnoughChildren(this.state) && C, D = !a && _, M = !a && T, I = Ue.getTransform(this.state, this.props);
-    return B.createElement(B.Fragment, null, B.createElement("div", { className: "react-multi-carousel-list " + u + " " + v, dir: p ? "rtl" : "ltr", ref: this.containerRef }, B.createElement("ul", { ref: this.listRef, className: "react-multi-carousel-track " + c, style: { transition: this.isAnimationAllowed ? f || Ur : "none", overflow: R ? "hidden" : "unset", transform: "translate3d(" + (I + d) + "px,0,0)" }, onMouseMove: this.handleMove, onMouseDown: this.handleDown, onMouseUp: this.handleOut, onMouseEnter: this.handleEnter, onMouseLeave: this.handleOut, onTouchStart: this.handleDown, onTouchMove: this.handleMove, onTouchEnd: this.handleOut }, this.renderCarouselItems()), w && (!D || o) && this.renderLeftArrow(D), w && (!M || o) && this.renderRightArrow(M), C && !g && this.renderButtonGroups(), C && !m && this.renderDotsList()), C && m && this.renderDotsList(), C && g && this.renderButtonGroups());
+    var b = L.getInitialState(this.state, this.props), R = b.shouldRenderOnSSR, C = b.shouldRenderAtAll, _ = L.isInLeftEnd(this.state), T = L.isInRightEnd(this.state), w = i && !(l && (n && -1 < l.indexOf(n) || this.state.deviceType && -1 < l.indexOf(this.state.deviceType))) && !L.notEnoughChildren(this.state) && C, D = !a && _, I = !a && T, M = Ue.getTransform(this.state, this.props);
+    return B.createElement(B.Fragment, null, B.createElement("div", { className: "react-multi-carousel-list " + u + " " + v, dir: p ? "rtl" : "ltr", ref: this.containerRef }, B.createElement("ul", { ref: this.listRef, className: "react-multi-carousel-track " + c, style: { transition: this.isAnimationAllowed ? f || Ur : "none", overflow: R ? "hidden" : "unset", transform: "translate3d(" + (M + d) + "px,0,0)" }, onMouseMove: this.handleMove, onMouseDown: this.handleDown, onMouseUp: this.handleOut, onMouseEnter: this.handleEnter, onMouseLeave: this.handleOut, onTouchStart: this.handleDown, onTouchMove: this.handleMove, onTouchEnd: this.handleOut }, this.renderCarouselItems()), w && (!D || o) && this.renderLeftArrow(D), w && (!I || o) && this.renderRightArrow(I), C && !g && this.renderButtonGroups(), C && !m && this.renderDotsList()), C && m && this.renderDotsList(), C && g && this.renderButtonGroups());
   }, t.defaultProps = { slidesToSlide: 1, infinite: !1, draggable: !0, swipeable: !0, arrows: !0, renderArrowsWhenDisabled: !1, containerClass: "", sliderClass: "", itemClass: "", keyBoardControl: !0, autoPlaySpeed: 3e3, showDots: !1, renderDotsOutside: !1, renderButtonGroupOutside: !1, minimumTouchDrag: 80, className: "", dotListClass: "", focusOnSelect: !1, centerMode: !1, additionalTransfrom: 0, pauseOnHover: !0, shouldResetAutoplay: !0, rewind: !1, rtl: !1, rewindWithAnimation: !1 }, t;
 }(B.Component);
 Xt.default = wo;
@@ -1420,7 +1420,7 @@ function ko({
     }
   );
 }
-function Mo({
+function Io({
   children: e,
   type: t,
   id: r,
@@ -1430,7 +1430,7 @@ function Mo({
 }) {
   return /* @__PURE__ */ S.jsxs(rr, { children: [
     /* @__PURE__ */ S.jsx(ko, { children: e }),
-    /* @__PURE__ */ S.jsx(Mo, {})
+    /* @__PURE__ */ S.jsx(Io, {})
   ] });
 }
 function ol({
@@ -1486,14 +1486,14 @@ function al({
 function sl({
   size: e = 4,
   className: t = "",
-  isVisible: r = !1,
+  isVisible: r = !0,
   ...n
 }) {
   return /* @__PURE__ */ S.jsx("div", { className: "separator my-" + e + ` ${r ? "" : "opacity-0"}` + t, ...n });
 }
-var Mn = {}, nr = {}, ir = {};
+var In = {}, nr = {}, ir = {};
 Object.defineProperty(ir, "__esModule", { value: !0 });
-var Xr = "html", qr = "head", Ye = "body", Io = /<([a-zA-Z]+[0-9]?)/, Kr = /<head[^]*>/i, Jr = /<body[^]*>/i, et = function(e, t) {
+var Xr = "html", qr = "head", Ye = "body", Mo = /<([a-zA-Z]+[0-9]?)/, Kr = /<head[^]*>/i, Jr = /<body[^]*>/i, et = function(e, t) {
   throw new Error("This browser does not support `document.implementation.createHTMLDocument`");
 }, Lt = function(e, t) {
   throw new Error("This browser does not support `DOMParser.prototype.parseFromString`");
@@ -1519,7 +1519,7 @@ qe && qe.content && (Ft = function(e) {
   return qe.innerHTML = e, qe.content.childNodes;
 });
 function jo(e) {
-  var t, r, n = e.match(Io), i = n && n[1] ? n[1].toLowerCase() : "";
+  var t, r, n = e.match(Mo), i = n && n[1] ? n[1].toLowerCase() : "";
   switch (i) {
     case Xr: {
       var o = Lt(e);
@@ -1577,15 +1577,15 @@ var O = {}, ce = A && A.__extends || /* @__PURE__ */ function() {
     }
     t.prototype = r === null ? Object.create(r) : (n.prototype = r.prototype, new n());
   };
-}(), Ie = A && A.__assign || function() {
-  return Ie = Object.assign || function(e) {
+}(), Me = A && A.__assign || function() {
+  return Me = Object.assign || function(e) {
     for (var t, r = 1, n = arguments.length; r < n; r++) {
       t = arguments[r];
       for (var i in t)
         Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
     }
     return e;
-  }, Ie.apply(this, arguments);
+  }, Me.apply(this, arguments);
 };
 Object.defineProperty(O, "__esModule", { value: !0 });
 O.cloneNode = O.hasChildren = O.isDocument = O.isDirective = O.isComment = O.isText = O.isCDATA = O.isTag = O.Element = O.Document = O.CDATA = O.NodeWithChildren = O.ProcessingInstruction = O.Comment = O.Text = O.DataNode = O.Node = void 0;
@@ -1666,7 +1666,7 @@ var at = (
   }(sr)
 );
 O.DataNode = at;
-var In = (
+var Mn = (
   /** @class */
   function(e) {
     ce(t, e);
@@ -1683,7 +1683,7 @@ var In = (
     }), t;
   }(at)
 );
-O.Text = In;
+O.Text = Mn;
 var Nn = (
   /** @class */
   function(e) {
@@ -1877,14 +1877,14 @@ function lr(e, t) {
   t === void 0 && (t = !1);
   var r;
   if (zn(e))
-    r = new In(e.data);
+    r = new Mn(e.data);
   else if (Bn(e))
     r = new Nn(e.data);
   else if (Vn(e)) {
-    var n = t ? Rt(e.children) : [], i = new Fn(e.name, Ie({}, e.attribs), n);
+    var n = t ? Rt(e.children) : [], i = new Fn(e.name, Me({}, e.attribs), n);
     n.forEach(function(u) {
       return u.parent = i;
-    }), e.namespace != null && (i.namespace = e.namespace), e["x-attribsNamespace"] && (i["x-attribsNamespace"] = Ie({}, e["x-attribsNamespace"])), e["x-attribsPrefix"] && (i["x-attribsPrefix"] = Ie({}, e["x-attribsPrefix"])), r = i;
+    }), e.namespace != null && (i.namespace = e.namespace), e["x-attribsNamespace"] && (i["x-attribsNamespace"] = Me({}, e["x-attribsNamespace"])), e["x-attribsPrefix"] && (i["x-attribsPrefix"] = Me({}, e["x-attribsPrefix"])), r = i;
   } else if (Wn(e)) {
     var n = t ? Rt(e.children) : [], o = new jn(n);
     n.forEach(function(c) {
@@ -3197,27 +3197,27 @@ hr.default = Ra;
   e.returnFirstArg = c;
 })(dr);
 Object.defineProperty(lt, "__esModule", { value: !0 });
-var Me = ee, an = dr, Pa = ["checked", "value"], Da = ["input", "select", "textarea"], ka = {
+var Ie = ee, an = dr, Pa = ["checked", "value"], Da = ["input", "select", "textarea"], ka = {
   reset: !0,
   submit: !0
 };
-function Ma(e, t) {
+function Ia(e, t) {
   e === void 0 && (e = {});
   var r = {}, n = !!(e.type && ka[e.type]);
   for (var i in e) {
     var o = e[i];
-    if ((0, Me.isCustomAttribute)(i)) {
+    if ((0, Ie.isCustomAttribute)(i)) {
       r[i] = o;
       continue;
     }
     var l = i.toLowerCase(), a = sn(l);
     if (a) {
-      var u = (0, Me.getPropertyInfo)(a);
+      var u = (0, Ie.getPropertyInfo)(a);
       switch (Pa.includes(a) && Da.includes(t) && !n && (a = sn("default" + l)), r[a] = o, u && u.type) {
-        case Me.BOOLEAN:
+        case Ie.BOOLEAN:
           r[a] = !0;
           break;
-        case Me.OVERLOADED_BOOLEAN:
+        case Ie.OVERLOADED_BOOLEAN:
           o === "" && (r[a] = !0);
           break;
       }
@@ -3227,15 +3227,15 @@ function Ma(e, t) {
   }
   return (0, an.setStyleProp)(e.style, r), r;
 }
-lt.default = Ma;
+lt.default = Ia;
 function sn(e) {
-  return Me.possibleStandardNames[e];
+  return Ie.possibleStandardNames[e];
 }
-var mr = {}, Ia = A && A.__importDefault || function(e) {
+var mr = {}, Ma = A && A.__importDefault || function(e) {
   return e && e.__esModule ? e : { default: e };
 };
 Object.defineProperty(mr, "__esModule", { value: !0 });
-var Pt = Q, Na = Ia(lt), Ne = dr, Aa = {
+var Pt = Q, Na = Ma(lt), Ne = dr, Aa = {
   cloneElement: Pt.cloneElement,
   createElement: Pt.createElement,
   isValidElement: Pt.isValidElement
@@ -3312,8 +3312,8 @@ function ja(e) {
     return u ? (0, i.default)((0, r.default)(u, (c == null ? void 0 : c.htmlparser2) || l), c) : [];
   }
   e.default = a;
-})(Mn);
-const ln = /* @__PURE__ */ Tn(Mn), xe = ln.default || ln;
+})(In);
+const ln = /* @__PURE__ */ Tn(In), xe = ln.default || ln;
 function ll({
   children: e,
   className: t = "",
@@ -4051,15 +4051,15 @@ function ai(e, ...t) {
     let T = !0;
     const w = g(function() {
       l++;
-      const M = mn(
+      const I = mn(
         C,
         arguments
       );
-      if (a = _.apply(null, M), process.env.NODE_ENV !== "production") {
-        const { identityFunctionCheck: I, inputStabilityCheck: te } = rs(T, p);
-        if (I.shouldRun && I.run(
+      if (a = _.apply(null, I), process.env.NODE_ENV !== "production") {
+        const { identityFunctionCheck: M, inputStabilityCheck: te } = rs(T, p);
+        if (M.shouldRun && M.run(
           c,
-          M,
+          I,
           a
         ), te.shouldRun) {
           const de = mn(
@@ -4067,7 +4067,7 @@ function ai(e, ...t) {
             arguments
           );
           te.run(
-            { inputSelectorResults: M, inputSelectorResultsCopy: de },
+            { inputSelectorResults: I, inputSelectorResultsCopy: de },
             { memoize: d, memoizeOptions: b },
             arguments
           );
@@ -4301,14 +4301,14 @@ function ms({
         ..._,
         ...c.sliceCaseReducersByType
       };
-      return cs(i.initialState, (M) => {
-        for (let I in D)
-          M.addCase(I, D[I]);
-        for (let I of c.sliceMatchers)
-          M.addMatcher(I.matcher, I.reducer);
-        for (let I of T)
-          M.addMatcher(I.matcher, I.reducer);
-        w && M.addDefaultCase(w);
+      return cs(i.initialState, (I) => {
+        for (let M in D)
+          I.addCase(M, D[M]);
+        for (let M of c.sliceMatchers)
+          I.addMatcher(M.matcher, M.reducer);
+        for (let M of T)
+          I.addMatcher(M.matcher, M.reducer);
+        w && I.addDefaultCase(w);
       });
     }
     const m = (_) => _, g = /* @__PURE__ */ new Map();
@@ -4320,25 +4320,25 @@ function ms({
       return v || (v = d()), v.getInitialState();
     }
     function R(_, T = !1) {
-      function w(M) {
-        let I = M[_];
-        if (typeof I > "u") {
+      function w(I) {
+        let M = I[_];
+        if (typeof M > "u") {
           if (T)
-            I = b();
+            M = b();
           else if (process.env.NODE_ENV !== "production")
             throw new Error(process.env.NODE_ENV === "production" ? V(15) : "selectSlice returned undefined for an uninjected slice reducer");
         }
-        return I;
+        return M;
       }
-      function D(M = m) {
-        const I = gn(g, T, {
+      function D(I = m) {
+        const M = gn(g, T, {
           insert: () => /* @__PURE__ */ new WeakMap()
         });
-        return gn(I, M, {
+        return gn(M, I, {
           insert: () => {
             const te = {};
             for (const [de, ne] of Object.entries(i.selectors ?? {}))
-              te[de] = vs(ne, M, b, T);
+              te[de] = vs(ne, I, b, T);
             return te;
           }
         });
@@ -4536,7 +4536,7 @@ const Rs = {
   }
 }), { setIsOpen: Ps, setContent: Ds, setName: pl } = li.actions;
 li.reducer;
-var Mt = {};
+var It = {};
 /**
  * @license React
  * use-sync-external-store-with-selector.production.min.js
@@ -4549,14 +4549,14 @@ var Mt = {};
 var _n;
 function ks() {
   if (_n)
-    return Mt;
+    return It;
   _n = 1;
   var e = Q;
   function t(u, c) {
     return u === c && (u !== 0 || 1 / u === 1 / c) || u !== u && c !== c;
   }
   var r = typeof Object.is == "function" ? Object.is : t, n = e.useSyncExternalStore, i = e.useRef, o = e.useEffect, l = e.useMemo, a = e.useDebugValue;
-  return Mt.useSyncExternalStoreWithSelector = function(u, c, f, d, m) {
+  return It.useSyncExternalStoreWithSelector = function(u, c, f, d, m) {
     var g = i(null);
     if (g.current === null) {
       var v = { hasValue: !1, value: null };
@@ -4575,8 +4575,8 @@ function ks() {
         }
         if (D = _, r(C, w))
           return D;
-        var M = d(w);
-        return m !== void 0 && m(D, M) ? D : (C = w, _ = M);
+        var I = d(w);
+        return m !== void 0 && m(D, I) ? D : (C = w, _ = I);
       }
       var R = !1, C, _, T = f === void 0 ? null : f;
       return [function() {
@@ -4589,9 +4589,9 @@ function ks() {
     return o(function() {
       v.hasValue = !0, v.value = p;
     }, [p]), a(p), p;
-  }, Mt;
+  }, It;
 }
-var It = {};
+var Mt = {};
 /**
  * @license React
  * use-sync-external-store-with-selector.development.js
@@ -4602,7 +4602,7 @@ var It = {};
  * LICENSE file in the root directory of this source tree.
  */
 var bn;
-function Ms() {
+function Is() {
   return bn || (bn = 1, process.env.NODE_ENV !== "production" && function() {
     typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ < "u" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart == "function" && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
     var e = Q;
@@ -4617,7 +4617,7 @@ function Ms() {
         value: null
       }, v.current = p) : p = v.current;
       var b = l(function() {
-        var T = !1, w, D, M = function(ne) {
+        var T = !1, w, D, I = function(ne) {
           if (!T) {
             T = !0, w = ne;
             var _e = m(ne);
@@ -4633,10 +4633,10 @@ function Ms() {
             return oe;
           var be = m(ne);
           return g !== void 0 && g(oe, be) ? oe : (w = ne, D = be, be);
-        }, I = d === void 0 ? null : d, te = function() {
-          return M(f());
-        }, de = I === null ? void 0 : function() {
-          return M(I());
+        }, M = d === void 0 ? null : d, te = function() {
+          return I(f());
+        }, de = M === null ? void 0 : function() {
+          return I(M());
         };
         return [te, de];
       }, [f, d, m, g]), R = b[0], C = b[1], _ = n(c, R, C);
@@ -4644,10 +4644,10 @@ function Ms() {
         p.hasValue = !0, p.value = _;
       }, [_]), a(_), _;
     }
-    It.useSyncExternalStoreWithSelector = u, typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ < "u" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop == "function" && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
-  }()), It;
+    Mt.useSyncExternalStoreWithSelector = u, typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ < "u" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop == "function" && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
+  }()), Mt;
 }
-process.env.NODE_ENV === "production" ? ks() : Ms();
+process.env.NODE_ENV === "production" ? ks() : Is();
 var ve = (
   // prettier-ignore
   // @ts-ignore
@@ -4656,7 +4656,7 @@ var ve = (
   /* fall back to a per-module scope (pre-8.1 behaviour) if `globalThis` is not available */
   {}
 );
-function Is() {
+function Ms() {
   if (!ve.createContext)
     return {};
   const e = Sn[En] ?? (Sn[En] = /* @__PURE__ */ new Map());
@@ -4665,7 +4665,7 @@ function Is() {
     null
   ), process.env.NODE_ENV !== "production" && (t.displayName = "ReactRedux"), e.set(ve.createContext, t)), t;
 }
-var Fe = /* @__PURE__ */ Is();
+var Fe = /* @__PURE__ */ Ms();
 function ui(e = Fe) {
   return function() {
     const r = ve.useContext(e);
@@ -4785,7 +4785,7 @@ function gl({
       children: /* @__PURE__ */ S.jsx(
         "iframe",
         {
-          src: "https://www.youtube.com/embed/QeMCiqunJ3w?si=AOy-HxSN18v304B7",
+          src: e,
           title: t,
           allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
           allowFullScreen: !0,
@@ -4799,7 +4799,7 @@ function _l() {
   return /* @__PURE__ */ S.jsx(
     "img",
     {
-      src: "/img/misc/spinner-new.gif",
+      src: "/img/spinner.gif",
       alt: "loading spinner",
       className: "w-8 my-4 mx-auto"
     }
@@ -4877,7 +4877,7 @@ export {
   Po as CarouselBase,
   tl as CarouselDefault,
   rr as DivDefault,
-  Mo as GroupInputLabel,
+  Io as GroupInputLabel,
   gl as IFrame,
   yl as IconLink,
   Do as Image,

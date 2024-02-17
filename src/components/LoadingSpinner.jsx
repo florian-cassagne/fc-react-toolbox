@@ -1,7 +1,7 @@
 import React from "react";
 
 function LoadingSpinner() {
-  let imgSpinner = '/img/misc/spinner-new.gif';
+  let imgSpinner = '/img/spinner.gif';
 
   return (
     <img src={imgSpinner}

@@ -6,7 +6,7 @@ import React from "react";
 function Separator({
                      size = 4,
                      className = '',
-                     isVisible = false,
+                     isVisible = true,
                      ...props
                    }) {
 

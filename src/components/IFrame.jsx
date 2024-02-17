@@ -11,7 +11,7 @@ function IFrame({
     <div className={'relative w-full pt-[56.25%] ' + className}
          {...transitionFadeIn}
          {...props}>
-      <iframe src={"https://www.youtube.com/embed/QeMCiqunJ3w?si=AOy-HxSN18v304B7"}
+      <iframe src={src}
               title={title}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
