@@ -36,7 +36,7 @@ import * as VariableHelper from "./helpers/VariableHelper";
 import * as StyleAssets from "./utils/StyleAssets";
 import * as PropsAssets from "./utils/PropsAssets";
 
-import './index.css';
+import './output.css';
 
 
 export {
