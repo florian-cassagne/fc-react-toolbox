@@ -33,7 +33,7 @@ Check the top-level render call using <`+y+">.")}return h}}function di(s,h){{if(
       `,href:t,children:e})})}function Ei({children:e,className:t="",...r}){return C.jsx(We,{className:`w-full md:w-1/2 md:mr-[25%] md:ml-[25%]
     ${t}`,...r,children:e})}function Ti({children:e,className:t="",...r}){return C.jsx(We,{className:`w-full ${t}`,isColored:!0,isLarger:!0,isTransitionEnabled:!0,...r,children:e})}function Rr({children:e,className:t="",isLarger:r=!1,isColored:n=!0,...i}){return C.jsx("div",{className:`rounded-full p-1 lg:p-2 px-4 mb-2 lg:mb-4 text-center 
       ${ee} 
-      ${r?"w-1/2 mx-auto":"mx-1 lg:mx-2"}
+      ${r?"w-1/2 mx-auto":"mx-1 lg:mx-2"} 
       ${n?wr:""} 
       ${t}
       `,...i,children:e})}function wi({children:e,className:t="",isColored:r=!0,...n}){return C.jsx(Rr,{className:`cursor-pointer 

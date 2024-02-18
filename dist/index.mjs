@@ -715,7 +715,7 @@ function $i({
     {
       className: `rounded-full p-1 lg:p-2 px-4 mb-2 lg:mb-4 text-center 
       ${Q} 
-      ${r ? "w-1/2 mx-auto" : "mx-1 lg:mx-2"}
+      ${r ? "w-1/2 mx-auto" : "mx-1 lg:mx-2"} 
       ${n ? wn : ""} 
       ${t}
       `,
