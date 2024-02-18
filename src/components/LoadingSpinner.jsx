@@ -5,7 +5,7 @@ function LoadingSpinner() {
 
   return (
     <img src={imgSpinner}
-         alt={"loading spinner"}
+         alt={'loading spinner'}
          className={'w-8 my-4 mx-auto'}/>
   );
 }

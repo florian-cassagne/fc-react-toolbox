@@ -9,7 +9,7 @@ function Label({
                }) {
   return (
     <label for={forInput}
-           className={'mr-2 ' + className}
+           className={`mr-2 ${className}`}
            {...props}>
       {children}
     </label>

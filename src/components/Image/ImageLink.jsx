@@ -13,15 +13,18 @@ function ImageLink({
                      ...props
                    }) {
   return (
-    <div className={'w-full flex justify-center ' + animationDefault + className} {...props}>
+    <div className={`w-full flex justify-center
+    ${animationDefault} 
+    ${className}`}
+         {...props}>
       <a href={href}
-         className={'relative w-[95%] hover:bg-neutral-500 '
-           + shadowDefault
-           + animationDefault
-           + (!zoomDisabled ? 'hover:w-full ' : '')
-           + classNameImage}
+         className={`relative w-[95%] hover:bg-neutral-500 
+         ${shadowDefault} 
+         ${animationDefault} 
+         ${!zoomDisabled ? 'hover:w-full ' : ''} 
+         ${classNameImage}`}
          target={target}>
-        <div className={'image-mask absolute inset-0 w-full h-full hover:bg-black/50 ' + animationDefault}>
+        <div className={`image-mask absolute inset-0 w-full h-full hover:bg-black/50  ${animationDefault}`}>
           <p className={'image-mask__info hidden'}>Cliquez pour y accéder !</p>
         </div>
         <img src={src}

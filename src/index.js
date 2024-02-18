@@ -44,7 +44,7 @@ root.render(
     <ButtonLink>Button with link</ButtonLink>
     <ButtonLinkBig>Button with link, but larger</ButtonLinkBig>
     <ButtonLinkXL>Button with link, even more bigger</ButtonLinkXL>
-    <ButtonNoLink>Button without link</ButtonNoLink>
+    <ButtonNoLink className={'bg-green-800'}>Button without link</ButtonNoLink>
     <Section>Alternative to ButtonNoLink</Section>
     <CarouselBase>
       <Image src={'img/example-1.jpg'}/>

@@ -5,10 +5,14 @@ import React from "react";
 function ButtonNoLink({
                         children,
                         className = '',
+                        isColored = true,
                         ...props
                       }) {
   return (
-    <Section className={'cursor-pointer ' + colorPrimary + className} {...props}>
+    <Section className={`cursor-pointer 
+    ${!isColored ? `${colorPrimary}` : ''} 
+    ${className}`}
+             {...props}>
       {children}
     </Section>
   );

@@ -12,14 +12,16 @@ function IconLink({
                     ...props
                   }) {
   return (
-    <a className={'w-12 mx-4 ease-in-out hover:scale-110 hover-darken '
-      + animationDefault
-      + className}
+    <a className={`w-12 mx-4 ease-in-out hover:scale-110 hover-darken 
+      ${animationDefault} 
+      ${className}
+      `}
        href={link}
        target={target}
        {...props}>
+
       <img src={image}
-           className={'w-full ' + imgClassName}
+           className={`w-full ${imgClassName}`}
            title={title}
            alt={alt}/>
     </a>

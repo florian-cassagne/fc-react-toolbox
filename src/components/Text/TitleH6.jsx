@@ -7,9 +7,11 @@ function TitleH6({
                    isMarginEnabled = true,
                    ...props
                  }) {
-  const classNameMargin = (isMarginEnabled) ? 'my-2 sm:my-4 ' : ''
+
   return (
-    <h6 className={'text-md ' + classNameMargin + className}
+    <h6 className={`text-md 
+    ${isMarginEnabled ? 'my-2 sm:my-4 ' : ''} 
+    ${className}`}
         {...props}>
       {parse(children)}
     </h6>

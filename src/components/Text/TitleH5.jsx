@@ -7,9 +7,11 @@ function TitleH5({
                    isMarginEnabled = true,
                    ...props
                  }) {
-  const classNameMargin = (isMarginEnabled) ? 'my-2 sm:my-4 ' : ''
+
   return (
-    <h5 className={'text-md uppercase ' + classNameMargin + className}
+    <h5 className={`text-md uppercase 
+    ${isMarginEnabled ? 'my-2 sm:my-4' : ''} 
+    ${className}`}
         {...props}>
       {parse(children)}
     </h5>

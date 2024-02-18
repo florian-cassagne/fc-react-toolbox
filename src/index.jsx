@@ -4,8 +4,7 @@ import ButtonLinkBig from './components/Button/ButtonLinkBig';
 import ButtonLinkXL from './components/Button/ButtonLinkXL';
 import ButtonNoLink from './components/Button/ButtonNoLink';
 import Section from './components/Button/Section';
-import CarouselBase from "./components/Carousel/CarouselBase";
-import CarouselDefault from "./components/Carousel/CarouselDefault";
+import CarouselBase from "./components/CarouselBase";
 import DivDefault from "./components/Content/DivDefault";
 import Paragraph from "./components/Content/Paragraph";
 import SectionBig from "./components/Content/SectionBig";
@@ -36,7 +35,7 @@ import * as VariableHelper from "./helpers/VariableHelper";
 import * as StyleAssets from "./utils/StyleAssets";
 import * as PropsAssets from "./utils/PropsAssets";
 
-import '../output.css';
+import './output.css';
 
 
 export {
@@ -47,7 +46,6 @@ export {
   ButtonNoLink,
   Section,
   CarouselBase,
-  CarouselDefault,
   DivDefault,
   Paragraph,
   SectionBig,
