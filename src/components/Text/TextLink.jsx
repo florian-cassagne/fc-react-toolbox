@@ -12,7 +12,7 @@ function TextLink({
     <a href={href}
        className={className}
        {...props}>
-      <p className={'hover:scale-105 w-full h-full inline-block text-orange-200 hover:text-orange-400 ' + animationDefault}>
+      <p className={'hover:scale-105 inline-block text-orange-200 hover:text-orange-400 ' + animationDefault}>
         {children}
       </p>
     </a>

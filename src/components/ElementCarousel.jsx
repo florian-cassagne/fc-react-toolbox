@@ -35,7 +35,7 @@ export const responsive = {
   }
 };
 
-function CarouselBase({children, ...props}) {
+function ElementCarousel({children, ...props}) {
 
   window.addEventListener('resize', updateCarouselItemsOpacity);
 
@@ -58,4 +58,4 @@ function CarouselBase({children, ...props}) {
 }
 
 
-export default CarouselBase;
+export default ElementCarousel;

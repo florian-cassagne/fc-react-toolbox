@@ -9,16 +9,16 @@ function Image({
                  className = '',
                  classNameImage = '',
                  isEnhancedMode = true,
-                 adjustSize = true,
+                 fullSize = true,
                  ...props
                }) {
-  classNameImage += (isEnhancedMode) ? 'w-[95%] hover:w-full shadow-[0_0_5px_3px_rgba(255,255,255,0.3)] ' : ''
+  classNameImage += (isEnhancedMode) ? 'w-[95%] hover:w-[99%] shadow-[0_0_5px_3px_rgba(255,255,255,0.3)] ' : ''
 
   return (
-    <div className={`flex justify-center 
+    <div className={`flex justify-center p-1
     ${animationDefault} 
     ${className} 
-    ${adjustSize ? 'w-full' : ''}`}
+    ${fullSize ? 'w-full' : ''}`}
          {...props}>
       <img src={src}
            className={`${animationDefault} ${classNameImage}`}

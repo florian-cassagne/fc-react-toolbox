@@ -10,8 +10,8 @@ function ButtonNoLink({
                       }) {
   return (
     <Section className={`cursor-pointer 
-    ${!isColored ? `${colorPrimary}` : ''} 
     ${className}`}
+             isColored={isColored}
              {...props}>
       {children}
     </Section>

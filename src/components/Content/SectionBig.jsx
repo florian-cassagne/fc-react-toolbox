@@ -7,7 +7,7 @@ function SectionBig({
                       ...props
                     }) {
   return (
-    <section className={'my-16 sm:my-24 lg:my-32 ' + className}
+    <section className={'py-16 sm:py-24 lg:py-32 ' + className}
              {...props}>
       {children}
     </section>

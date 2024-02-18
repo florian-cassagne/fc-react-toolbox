@@ -1,14 +1,14 @@
-import ButtonClose from './components/Button/ButtonClose';
+
 import ButtonLink from './components/Button/ButtonLink';
 import ButtonLinkBig from './components/Button/ButtonLinkBig';
 import ButtonLinkXL from './components/Button/ButtonLinkXL';
 import ButtonNoLink from './components/Button/ButtonNoLink';
 import Section from './components/Button/Section';
-import CarouselBase from "./components/CarouselBase";
+import ElementCarousel from "./components/ElementCarousel";
 import DivDefault from "./components/Content/DivDefault";
 import Paragraph from "./components/Content/Paragraph";
 import SectionBig from "./components/Content/SectionBig";
-import TextLink from "./components/Content/TextLink";
+import TextLink from "./components/Text/TextLink";
 import GroupInputLabel from "./components/Form/GroupInputLabel";
 import InputText from "./components/Form/InputText";
 import Label from "./components/Form/Label";
@@ -39,13 +39,12 @@ import './output.css';
 
 
 export {
-  ButtonClose,
   ButtonLink,
   ButtonLinkBig,
   ButtonLinkXL,
   ButtonNoLink,
   Section,
-  CarouselBase,
+  ElementCarousel,
   DivDefault,
   Paragraph,
   SectionBig,

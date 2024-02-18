@@ -8,7 +8,7 @@ function ButtonLinkXL({
                       }) {
   return (
     <ButtonLink className={`w-full ${className}`}
-                isColored={false}
+                isColored
                 isLarger
                 isTransitionEnabled
                 {...props}>

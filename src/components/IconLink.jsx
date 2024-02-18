@@ -12,7 +12,7 @@ function IconLink({
                     ...props
                   }) {
   return (
-    <a className={`w-12 mx-4 ease-in-out hover:scale-110 hover-darken 
+    <a className={`block w-12 mx-4 hover:scale-110 hover-darken 
       ${animationDefault} 
       ${className}
       `}

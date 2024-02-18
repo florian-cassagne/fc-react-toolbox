@@ -9,8 +9,7 @@ function Separator({
                    }) {
 
   return (
-    <div className={`separator w-full my-${size}
-    ${(isVisible) ? '' : 'opacity-0'}
+    <div className={`separator w-full my-${size} py-${size} ${(isVisible) ? 'bg-orange-950' : ''} 
     ${className}`}
          {...props} />
   )
