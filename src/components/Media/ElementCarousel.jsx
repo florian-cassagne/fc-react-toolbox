@@ -2,7 +2,7 @@ import React from "react";
 import Carousel from 'react-multi-carousel';
 
 import 'react-multi-carousel/lib/styles.css';
-import config from "../config";
+import config from "../../config";
 
 export function updateCarouselItemsOpacity() {
   let itemsAll = document.querySelectorAll('.react-multi-carousel-item');
