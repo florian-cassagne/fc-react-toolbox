@@ -1,5 +1,5 @@
 // Configuration par défaut
-const defaultConfig = {
+export const config = {
   theme: 'dark',
   // Possible values :
   // - dark
@@ -36,4 +36,4 @@ const defaultConfig = {
   },
 };
 
-module.exports = defaultConfig;
+export default config;

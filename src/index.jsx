@@ -13,3 +13,5 @@ export * from './utils';
 
 export * from './hooks/useMediaQuery';
 export * from './features/viewerSlice';
+
+export {initializeConfig} from './configSetup';

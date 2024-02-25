@@ -1,5 +1,5 @@
 import {useMediaQuery} from "react-responsive";
-import config from "../config";
+import config from "../toolbox.config";
 
 
 export const useIsScreen2XL = () => useMediaQuery({query: `

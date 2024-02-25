@@ -30,13 +30,6 @@ import {
 } from "./index.jsx";
 import InfoHeader from "./components/_App/InfoHeader";
 
-const defaultConfig = require('./toolbox.config.js');
-
-export function initializeConfig(userConfig = {}){
-  console.log(...userConfig)
-  return {...defaultConfig, ...userConfig};
-}
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

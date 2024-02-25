@@ -631,10 +631,10 @@ Check the top-level render call using <` + Ee + ">.");
 }
 process.env.NODE_ENV === "production" ? GE.exports = tN() : GE.exports = nN();
 var je = GE.exports;
-const Bi = "animation-all duration-200 ", cx = "bg-orange-900 hover:bg-orange-800 ", rN = "bg-neutral-900 hover:bg-neutral-800 ", a2 = "bg-neutral-800 ", aN = "bg-red-600 hover:bg-red-500 border border-red-300 ", iN = "shadow-[0_0_5px_3px_rgba(255,255,255,0.3)] ", Ys = {
+const Ys = {
   "data-aos": "fade-up",
   "data-aos-duration": "1000"
-};
+}, Bi = "animation-all duration-200 ", cx = "bg-orange-900 hover:bg-orange-800 ", rN = "bg-neutral-900 hover:bg-neutral-800 ", i2 = "bg-neutral-800 ", aN = "bg-red-600 hover:bg-red-500 border border-red-300 ", iN = "shadow-[0_0_5px_3px_rgba(255,255,255,0.3)] ";
 function fx({
   children: l,
   href: f = "",
@@ -648,7 +648,7 @@ function fx({
     "button",
     {
       className: `rounded-full 
-    ${m ? "my-4 " : "my-2 "} 
+    ${m ? "my-4" : "my-2"} 
     ${S ? cx : ""} 
     ${Bi} 
     ${d}`,
@@ -658,7 +658,7 @@ function fx({
         "a",
         {
           className: `block px-4 w-full h-full 
-      ${m ? "p-4" : "p-2"}
+      ${m ? "p-4" : "p-2"} 
       `,
           href: f,
           children: l
@@ -667,15 +667,15 @@ function fx({
     }
   );
 }
-function i2({
+function o2({
   children: l,
   className: f = "",
   ...d
 }) {
-  return /* @__PURE__ */ je.jsx(fx, { className: `w-full md:w-1/2 md:mr-[25%] md:ml-[25%]
+  return /* @__PURE__ */ je.jsx(fx, { className: `w-full md:!w-1/2 md:!mr-[25%] md:!ml-[25%] 
     ${f}`, ...d, children: l });
 }
-function o2({
+function l2({
   children: l,
   className: f = "",
   ...d
@@ -702,9 +702,9 @@ function oN({
   return /* @__PURE__ */ je.jsx(
     "div",
     {
-      className: `rounded-full p-1 lg:p-2 px-4 mb-2 lg:mb-4 text-center 
+      className: `rounded-full p-1 lg:!p-2 px-4 mb-2 lg:!mb-4 text-center 
       ${Bi} 
-      ${d ? "w-1/2 mx-auto" : "mx-1 lg:mx-2"} 
+      ${d ? "w-1/2 mx-auto" : "mx-1 lg:!mx-2"} 
       ${m ? cx : rN} 
       ${f}
       `,
@@ -713,7 +713,7 @@ function oN({
     }
   );
 }
-function l2({
+function u2({
   children: l,
   className: f = "",
   isColored: d = !0,
@@ -775,7 +775,7 @@ function uN({
     /* @__PURE__ */ je.jsx(uN, {})
   ] });
 }
-function u2({
+function s2({
   children: l,
   type: f,
   id: d,
@@ -789,12 +789,12 @@ function u2({
       type: f,
       id: d,
       name: m || d,
-      className: `w-full md:w-1/2 bg-neutral-900 p-2 rounded-full + ${S}`,
+      className: `w-full md:!w-1/2 bg-neutral-900 p-2 rounded-full + ${S}`,
       ...w
     }
   );
 }
-function s2({
+function c2({
   children: l,
   className: f = "",
   ...d
@@ -802,7 +802,7 @@ function s2({
   return /* @__PURE__ */ je.jsx(
     "section",
     {
-      className: "py-16 sm:py-24 lg:py-32 " + f,
+      className: "py-16 sm:!py-24 lg:!py-32 " + f,
       ...d,
       children: l
     }
@@ -1320,6 +1320,28 @@ var YN = lC;
 oC.default = YN.default;
 var GN = oC;
 const QN = /* @__PURE__ */ sx(GN), Sr = {
+  theme: "dark",
+  // Possible values :
+  // - dark
+  // - light
+  mainColor: "orange",
+  // Possible values (TailwindCSS's based) :
+  // - black
+  // - white
+  // - slate
+  // - gray
+  // - zinc
+  // - neutral
+  // - teal
+  // - cyan
+  // - sky
+  // - blue
+  // - indigo
+  // - violet
+  // - purple
+  // - fuchsia
+  // - pink
+  // - rose
   responsive: {
     breakpoint: {
       xs: 480,
@@ -1355,7 +1377,7 @@ const XN = {
     items: 1
   }
 };
-function c2({ children: l, ...f }) {
+function f2({ children: l, ...f }) {
   return window.addEventListener("resize", bb), /* @__PURE__ */ je.jsx(
     QN,
     {
@@ -1373,7 +1395,7 @@ function c2({ children: l, ...f }) {
     }
   );
 }
-function f2({
+function d2({
   image: l,
   link: f,
   title: d = "",
@@ -1405,7 +1427,7 @@ function f2({
     }
   );
 }
-function d2({
+function p2({
   src: l,
   title: f = "",
   className: d = "",
@@ -1462,7 +1484,7 @@ function xb({
     }
   );
 }
-function p2({
+function v2({
   href: l,
   src: f,
   title: d = "",
@@ -1506,7 +1528,7 @@ function p2({
     }
   );
 }
-function v2({
+function h2({
   size: l = 4,
   className: f = "",
   isVisible: d = !0,
@@ -1521,7 +1543,7 @@ function v2({
     }
   );
 }
-function h2() {
+function m2() {
   return /* @__PURE__ */ je.jsx(
     "img",
     {
@@ -1531,7 +1553,7 @@ function h2() {
     }
   );
 }
-function m2(l, f) {
+function y2(l, f) {
   JM(() => {
     const d = document.getElementById("header").offsetHeight;
     window.scrollTo(0, d);
@@ -2662,10 +2684,10 @@ const VL = {
       l.name = f.payload;
     }
   }
-}), y2 = {
+}), g2 = {
   EXPERIENCE: 0,
   PROJECT: 1
-}, { setIsOpen: IL, setContent: BL, setName: g2 } = Ox.actions, S2 = (l) => l.viewer;
+}, { setIsOpen: IL, setContent: BL, setName: S2 } = Ox.actions, E2 = (l) => l.viewer;
 Ox.reducer;
 var FE = {};
 /**
@@ -2833,7 +2855,7 @@ function ZL({ className: l = "", ...f }) {
   return /* @__PURE__ */ je.jsx(
     "button",
     {
-      className: `viewer__button-close absolute top-0 left-0 w-10 h-10 text-2xl rounded-tl-md md:rounded-tl-lg shadow-lg
+      className: `viewer__button-close absolute top-0 left-0 w-10 h-10 text-2xl rounded-tl-md md:!rounded-tl-lg shadow-lg
     ${aN} 
     ${Bi}
     ${l}
@@ -2844,7 +2866,7 @@ function ZL({ className: l = "", ...f }) {
     }
   );
 }
-function E2({ children: l, item: f, ...d }) {
+function C2({ children: l, item: f, ...d }) {
   const m = KL();
   function S() {
     document.querySelector(".viewer").classList.add("anim-to-left-fade-out"), setTimeout(() => {
@@ -2859,11 +2881,11 @@ function E2({ children: l, item: f, ...d }) {
   return /* @__PURE__ */ je.jsxs(
     "div",
     {
-      className: "viewer fixed z-40 top-[2%] md:top-[5%] left-[2%] md:left-[5%] w-[96%] h-[96%] md:w-[90%] md:h-[90%] overflow-hidden anim-to-left-fade-in anim-duration--fast border bg-black rounded-md md:rounded-lg",
+      className: "viewer fixed z-40 top-[2%] md:!top-[5%] left-[2%] md:!left-[5%] w-[96%] h-[96%] md:!w-[90%] md:!h-[90%] overflow-hidden anim-to-left-fade-in anim-duration--fast border bg-black rounded-md md:rounded-lg",
       onLoad: () => w(".viewer"),
       ...d,
       children: [
-        /* @__PURE__ */ je.jsx(dx, { className: "viewer__content absolute inset-0 overflow-y-auto h-full w-full my-4 sm:my-0 p-2 xs:p-4 lg:p-8", children: l }),
+        /* @__PURE__ */ je.jsx(dx, { className: "viewer__content absolute inset-0 overflow-y-auto h-full w-full my-4 sm:!my-0 p-2 sm:!p-4 lg:!p-8", children: l }),
         /* @__PURE__ */ je.jsx(ZL, { onClick: S })
       ]
     }
@@ -4692,7 +4714,7 @@ function nz(l) {
   l.default = x;
 })(Nx);
 const Jb = /* @__PURE__ */ sx(Nx), Gs = Jb.default || Jb;
-function C2({ children: l, deliveryDate: f }) {
+function T2({ children: l, deliveryDate: f }) {
   return /* @__PURE__ */ je.jsx(
     "div",
     {
@@ -4700,7 +4722,7 @@ function C2({ children: l, deliveryDate: f }) {
       ...Ys,
       children: /* @__PURE__ */ je.jsxs("div", { className: "md:text-xl bg-black/90 py-8", children: [
         /* @__PURE__ */ je.jsx("p", { className: "text-center pb-4", children: "🛠️ EN TRAVAUX 🛠️" }),
-        /* @__PURE__ */ je.jsx("p", { className: "p-1 md:p-2 pb-4", children: l }),
+        /* @__PURE__ */ je.jsx("p", { className: "p-1 md:!p-2 pb-4", children: l }),
         /* @__PURE__ */ je.jsx("p", { className: "text-center", children: f && Gs(` Livraison prévue pour le <b>${f}</b>`) })
       ] })
     }
@@ -5863,31 +5885,31 @@ Valid keys: ` + JSON.stringify(Object.keys(ue), null, "  ")
   ));
 })(Zx);
 var Mo = Zx.exports;
-const T2 = () => Mo.useMediaQuery({ query: `
+const w2 = () => Mo.useMediaQuery({ query: `
 (min-width:${Sr.responsive.breakpoint.xxl}px)
-` }), w2 = () => Mo.useMediaQuery({ query: `
+` }), b2 = () => Mo.useMediaQuery({ query: `
 (min-width:${Sr.responsive.breakpoint.xl}px) and
 (max-width:${Sr.responsive.breakpoint.xxl - 1}px)
-` }), b2 = () => Mo.useMediaQuery({ query: `
+` }), x2 = () => Mo.useMediaQuery({ query: `
 (min-width:${Sr.responsive.breakpoint.lg}px) and
 (max-width:${Sr.responsive.breakpoint.xl - 1}px)
-` }), x2 = () => Mo.useMediaQuery({ query: `
+` }), R2 = () => Mo.useMediaQuery({ query: `
 (min-width:${Sr.responsive.breakpoint.md}px) and
 (max-width:${Sr.responsive.breakpoint.lg - 1}px)
-` }), R2 = () => Mo.useMediaQuery({ query: `
+` }), _2 = () => Mo.useMediaQuery({ query: `
 (min-width:${Sr.responsive.breakpoint.sm}px) and
 (max-width:${Sr.responsive.breakpoint.md - 1}px)
-` }), _2 = () => Mo.useMediaQuery({ query: `
+` }), D2 = () => Mo.useMediaQuery({ query: `
 (min-width:${Sr.responsive.breakpoint.xs}px) and
 (max-width:${Sr.responsive.breakpoint.sm - 1}px)
-` }), D2 = () => Mo.useMediaQuery({ query: `
+` }), O2 = () => Mo.useMediaQuery({ query: `
 (max-width:${Sr.responsive.breakpoint.xs - 1}px)
 ` }), rz = () => Mo.useMediaQuery({ query: `
 (max-width:${Sr.responsive.breakpoint.sm - 1}px)
 ` }), az = () => Mo.useMediaQuery({ query: `
 (min-width:${Sr.responsive.breakpoint.sm}px) and 
 (max-width:${Sr.responsive.breakpoint.lg - 1}px)
-` }), O2 = () => Mo.useMediaQuery({ query: `
+` }), k2 = () => Mo.useMediaQuery({ query: `
 (min-width:${Sr.responsive.breakpoint.lg}px)
 ` });
 function iz({ children: l, ...f }) {
@@ -5898,14 +5920,14 @@ function iz({ children: l, ...f }) {
   ] });
 }
 function oz({ children: l, ...f }) {
-  return /* @__PURE__ */ je.jsx("nav", { id: "nav", className: "sticky top-0 w-full py-2 z-20 uppercase text-sm xs:text-base sm:text-lg lg:text-xl bg-black/90", children: /* @__PURE__ */ je.jsx("ul", { className: "nav-elements flex justify-center w-full ", children: l }) });
+  return /* @__PURE__ */ je.jsx("nav", { id: "nav", className: "sticky top-0 w-full py-2 z-20 uppercase text-sm xs:!text-base sm:!text-lg lg:!text-xl bg-black/90", children: /* @__PURE__ */ je.jsx("ul", { className: "nav-elements flex justify-center w-full ", children: l }) });
 }
-function k2({ children: l }) {
+function M2({ children: l }) {
   const f = rz(), d = az();
   return f || d ? /* @__PURE__ */ je.jsx(iz, { children: l }) : /* @__PURE__ */ je.jsx(oz, { children: l });
 }
-function M2({ children: l }) {
-  return /* @__PURE__ */ je.jsx("li", { className: "nav-element mr-4 xl:mr-8 border-2 border-orange-900 hover:border-orange-500 hover:bg-orange-700 transition-all duration-200 ease-in-out ", children: /* @__PURE__ */ je.jsx("a", { href: "/", className: "block px-5 py-2", children: l }) });
+function N2({ children: l }) {
+  return /* @__PURE__ */ je.jsx("li", { className: "nav-element mr-4 xl:!mr-8 border-2 border-orange-900 hover:border-orange-500 hover:bg-orange-700 transition-all duration-200 ease-in-out ", children: /* @__PURE__ */ je.jsx("a", { href: "/", className: "block px-5 py-2", children: l }) });
 }
 var lz = {
   prefix: "fas",
@@ -17483,7 +17505,7 @@ Check the render method of \`` + e + "`." : "";
         };
       }
     }
-    function e2(e) {
+    function t2(e) {
       return e;
     }
     function n_(e) {
@@ -19970,9 +19992,9 @@ Incoming: %s`, ne, "[" + t.join(", ") + "]", "[" + e.join(", ") + "]");
       }
       return [y, c];
     }
-    function t2(e, t, a) {
-    }
     function n2(e, t, a) {
+    }
+    function r2(e, t, a) {
     }
     function p0(e, t, a) {
       var i = It, u = wo(), c, v = wr();
@@ -26156,7 +26178,7 @@ function Jz(l, f) {
   let w = Gf(d.currentLocation.pathname, m) || d.currentLocation.pathname, g = Gf(d.nextLocation.pathname, m) || d.nextLocation.pathname;
   return lx(S.pathname, g) != null || lx(S.pathname, w) != null;
 }
-function N2({
+function L2({
   children: l,
   link: f,
   id: d = null,
@@ -26171,11 +26193,11 @@ function N2({
     {
       className: "nav-element ease-in-out hover:text-orange-300 hover:scale-105 " + (g === f ? "text-orange-300 " : "") + Bi + w,
       ...x,
-      children: m ? /* @__PURE__ */ je.jsx("a", { href: f, className: "block px-2 sm:px-5 py-2", children: l }) : /* @__PURE__ */ je.jsx(PC, { to: f, className: "block px-2 sm:px-5 py-2", children: l })
+      children: m ? /* @__PURE__ */ je.jsx("a", { href: f, className: "block px-2 sm:!px-5 py-2", children: l }) : /* @__PURE__ */ je.jsx(PC, { to: f, className: "block px-2 sm:!px-5 py-2", children: l })
     }
   );
 }
-function L2({
+function A2({
   children: l,
   className: f = "",
   ...d
@@ -26183,14 +26205,14 @@ function L2({
   return /* @__PURE__ */ je.jsx(
     "p",
     {
-      className: "py-2 lg:py-4 " + f,
+      className: "py-2 lg:!py-4 " + f,
       ...Ys,
       ...d,
       children: l
     }
   );
 }
-function A2({
+function z2({
   children: l,
   href: f,
   className: d = "",
@@ -26206,7 +26228,7 @@ function A2({
     }
   );
 }
-function z2({
+function U2({
   children: l,
   className: f = "",
   transitionEnabled: d = !0,
@@ -26215,14 +26237,14 @@ function z2({
   return /* @__PURE__ */ je.jsx(
     "h1",
     {
-      className: "text-2xl xs:text-3xl sm:text-3xl md:text-4xl lg:text-4xl uppercase my-8 sm:my-12 lg:my-16 text-center " + f,
+      className: "text-2xl xs:text-3xl md:text-4xl lg:text-4xl uppercase my-8 sm:my-12 lg:my-16 text-center " + f,
       ...d ? Ys : {},
       ...m,
       children: Gs(l)
     }
   );
 }
-function U2({
+function P2({
   children: l,
   className: f = "",
   transitionEnabled: d = !0,
@@ -26231,14 +26253,14 @@ function U2({
   return /* @__PURE__ */ je.jsx(
     "h2",
     {
-      className: "text-xl xs:text-2xl sm:text-2xl md:text-3xl lg:text-3xl my-6 sm:my-10 lg:my-12 text-center uppercase " + f,
+      className: "text-xl xs:text-2xl md:text-3xl lg:text-3xl my-6 sm:my-10 lg:my-12 text-center uppercase " + f,
       ...m,
       ...d ? Ys : {},
       children: Gs(l)
     }
   );
 }
-function P2({
+function j2({
   children: l,
   className: f = "",
   isSmallerMode: d = !1,
@@ -26255,7 +26277,7 @@ function P2({
     }
   );
 }
-function j2({
+function F2({
   children: l,
   className: f = "",
   isMarginEnabled: d = !0,
@@ -26272,7 +26294,7 @@ function j2({
     }
   );
 }
-function F2({
+function H2({
   children: l,
   className: f = "",
   isMarginEnabled: d = !0,
@@ -26289,7 +26311,7 @@ function F2({
     }
   );
 }
-function H2({
+function V2({
   children: l,
   className: f = "",
   isMarginEnabled: d = !0,
@@ -26306,111 +26328,116 @@ function H2({
     }
   );
 }
-function V2(l) {
+function I2(l) {
   return l.length === 0;
-}
-function I2(l, f) {
-  const d = document.getElementById(f);
-  d && l.observe(d);
 }
 function B2(l, f) {
   const d = document.getElementById(f);
+  d && l.observe(d);
+}
+function $2(l, f) {
+  const d = document.getElementById(f);
   d && l.unobserve(d);
 }
-function $2(l, f = 0) {
+function W2(l, f = 0) {
   return Math.floor(Math.random() * (l - f)) + f;
 }
-function W2(l) {
+function Y2(l) {
   const f = document.querySelector(l);
   f && window.scrollTo({
     top: f.offsetTop - 80,
     behavior: "smooth"
   });
 }
-function Y2(l) {
+function G2(l) {
   return 'url("' + l + '")';
 }
-function G2(l) {
+function Q2(l) {
   return l === "" ? "javascript:void(0);" : l;
 }
-function Q2(l) {
+function X2(l) {
   return l === 0 || l === "" || l === void 0;
 }
-function X2(l) {
+function q2(l) {
   return l === void 0;
 }
-function q2(l) {
+function K2(l) {
   return l = l.split("-"), new Date(l[0], l[1] - 1).toLocaleDateString("fr-FR", {
     year: "numeric",
     month: "long"
   });
 }
+const e2 = require("./toolbox.config.js");
+function Z2(l = {}) {
+  return console.log(...l), { ...e2, ...l };
+}
 export {
   fx as ButtonLink,
-  i2 as ButtonLinkBig,
-  o2 as ButtonLinkXL,
-  l2 as ButtonNoLink,
+  o2 as ButtonLinkBig,
+  l2 as ButtonLinkXL,
+  u2 as ButtonNoLink,
   dx as DivDefault,
-  c2 as ElementCarousel,
+  f2 as ElementCarousel,
   uN as GroupInputLabel,
-  d2 as IFrame,
-  f2 as IconLink,
+  p2 as IFrame,
+  d2 as IconLink,
   xb as Image,
-  p2 as ImageLink,
-  u2 as InputText,
+  v2 as ImageLink,
+  s2 as InputText,
   lN as Label,
-  h2 as LoadingSpinner,
-  k2 as Nav,
+  m2 as LoadingSpinner,
+  M2 as Nav,
   uz as NavDisplayButton,
-  M2 as NavHome,
-  N2 as NavItem,
+  N2 as NavHome,
+  L2 as NavItem,
   oz as NavLargeScreen,
   iz as NavSmallScreen,
-  L2 as Paragraph,
-  m2 as ScrollToTop,
+  A2 as Paragraph,
+  y2 as ScrollToTop,
   oN as Section,
-  s2 as SectionBig,
-  v2 as Separator,
-  A2 as TextLink,
-  z2 as TitleH1,
-  U2 as TitleH2,
-  P2 as TitleH3,
-  j2 as TitleH4,
-  F2 as TitleH5,
-  H2 as TitleH6,
-  C2 as UnderConstruction,
-  E2 as Viewer,
-  y2 as ViewerType,
-  G2 as adaptHref,
+  c2 as SectionBig,
+  h2 as Separator,
+  z2 as TextLink,
+  U2 as TitleH1,
+  P2 as TitleH2,
+  j2 as TitleH3,
+  F2 as TitleH4,
+  H2 as TitleH5,
+  V2 as TitleH6,
+  T2 as UnderConstruction,
+  C2 as Viewer,
+  g2 as ViewerType,
+  Q2 as adaptHref,
   Bi as animationDefault,
   aN as colorImportant,
   cx as colorPrimary,
   rN as colorSecondary,
-  a2 as colorSecondaryNoHover,
-  q2 as getDateTextYYYYMM,
-  Y2 as getImageUrl,
-  $2 as getRandomInt,
-  V2 as isEmpty,
-  X2 as isNull,
-  Q2 as isNullOrZero,
-  I2 as observeDOM,
-  W2 as scrollToAnchor,
-  S2 as selectViewer,
+  i2 as colorSecondaryNoHover,
+  K2 as getDateTextYYYYMM,
+  G2 as getImageUrl,
+  W2 as getRandomInt,
+  Z2 as initializeConfig,
+  I2 as isEmpty,
+  q2 as isNull,
+  X2 as isNullOrZero,
+  B2 as observeDOM,
+  Y2 as scrollToAnchor,
+  E2 as selectViewer,
   BL as setContent,
   IL as setIsOpen,
-  g2 as setName,
+  S2 as setName,
   iN as shadowDefault,
   Ys as transitionFadeIn,
-  B2 as unobserveDOM,
-  T2 as useIsScreen2XL,
-  D2 as useIsScreen2XS,
-  O2 as useIsScreenDesktop,
-  b2 as useIsScreenLG,
-  x2 as useIsScreenMD,
+  $2 as unobserveDOM,
+  w2 as useIsScreen2XL,
+  O2 as useIsScreen2XS,
+  k2 as useIsScreenDesktop,
+  x2 as useIsScreenLG,
+  R2 as useIsScreenMD,
   rz as useIsScreenMobile,
-  R2 as useIsScreenSM,
+  _2 as useIsScreenSM,
   az as useIsScreenTablet,
-  w2 as useIsScreenXL,
-  _2 as useIsScreenXS,
+  b2 as useIsScreenXL,
+  D2 as useIsScreenXS,
   Ox as viewerSlice
 };
