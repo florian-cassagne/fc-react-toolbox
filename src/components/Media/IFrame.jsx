@@ -1,4 +1,4 @@
-import {transitionFadeIn} from "../../utils/PropsAssets";
+import {transitionFadeIn} from "../../utils";
 import React from "react";
 
 function IFrame({

@@ -11,7 +11,7 @@ function UnderConstruction({children, deliveryDate}) {
         <p className={'text-center pb-4'}>
           🛠️ EN TRAVAUX 🛠️
         </p>
-        <p className={'p-1 md:p-2 pb-4'}>
+        <p className={'p-1 md:!p-2 pb-4'}>
           {children}
         </p>
         <p className={'text-center'}>

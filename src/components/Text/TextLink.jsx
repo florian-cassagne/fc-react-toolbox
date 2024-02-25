@@ -1,5 +1,5 @@
 import React from "react";
-import {animationDefault} from "../../utils/StyleAssets";
+import {animationDefault} from "../../utils";
 
 
 function TextLink({

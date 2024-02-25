@@ -1,4 +1,4 @@
-import {animationDefault, shadowDefault} from "../../utils/StyleAssets";
+import {animationDefault, shadowDefault} from "../../utils";
 import React from "react";
 
 function ImageLink({

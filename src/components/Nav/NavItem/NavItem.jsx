@@ -22,12 +22,12 @@ function NavItem({
         {...props}>
       {
         isExternLink ? (
-            <a href={link} className={'block px-2 sm:px-5 py-2'}>
+            <a href={link} className={'block px-2 sm:!px-5 py-2'}>
               {children}
             </a>
           )
           :
-          <Link to={link} className={'block px-2 sm:px-5 py-2'}>
+          <Link to={link} className={'block px-2 sm:!px-5 py-2'}>
             {children}
           </Link>
 

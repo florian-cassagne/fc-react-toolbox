@@ -1,5 +1,5 @@
-import {animationDefault, colorPrimary} from "../../utils/StyleAssets";
-import {transitionFadeIn} from "../../utils/PropsAssets";
+import {animationDefault, colorPrimary} from "../../utils";
+import {transitionFadeIn} from "../../utils";
 import React from "react";
 
 function ButtonLink({
@@ -13,7 +13,7 @@ function ButtonLink({
                     }) {
   return (
     <button className={`rounded-full 
-    ${isLarger ? 'my-4 ' : 'my-2 '} 
+    ${isLarger ? 'my-4' : 'my-2'} 
     ${isColored ? colorPrimary : ''} 
     ${animationDefault} 
     ${className}`}
@@ -21,7 +21,7 @@ function ButtonLink({
             {...(isTransitionEnabled ? transitionFadeIn : {})}
     >
       <a className={`block px-4 w-full h-full 
-      ${isLarger ? 'p-4' : 'p-2'}
+      ${isLarger ? 'p-4' : 'p-2'} 
       `}
          href={href}>
         {children}
