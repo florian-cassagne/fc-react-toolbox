@@ -1,4 +1,4 @@
-export * as ArrayHelper from "./ArrayHelper";
-export * as ObserverHelper from "./ObserverHelper";
-export * as Util from "./Util";
-export * as VariableHelper from "./VariableHelper";
+export * from "./ArrayHelper";
+export * from "./ObserverHelper";
+export * from "./Util";
+export * from "./VariableHelper";

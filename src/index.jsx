@@ -8,8 +8,8 @@ export * from './components/Miscellaneous';
 export * from './components/Nav';
 export * from './components/Text';
 
-export * as Helper from './helpers';
-export * as Util from './utils';
+export * from './helpers';
+export * from './utils';
 
 export * from './hooks/useMediaQuery';
 export * from './features/viewerSlice';
