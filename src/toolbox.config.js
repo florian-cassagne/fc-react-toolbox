@@ -1,28 +1,21 @@
 // Configuration par défaut
-export const config = {
-  theme: 'dark',
+const config = {
   // Possible values :
   // - dark
   // - light
+  theme: 'dark',
 
-  mainColor: 'orange',
   // Possible values (TailwindCSS's based) :
   // - black
   // - white
-  // - slate
-  // - gray
-  // - zinc
-  // - neutral
-  // - teal
+  // - red
+  // - orange
+  // - green
   // - cyan
-  // - sky
   // - blue
-  // - indigo
-  // - violet
   // - purple
-  // - fuchsia
-  // - pink
-  // - rose
+  colorPrimary: 'orange',
+  colorSecondary: 'blue',
 
   responsive: {
     breakpoint: {

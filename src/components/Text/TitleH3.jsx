@@ -7,7 +7,7 @@ function TitleH3({
                    isSmallerMode = false,
                    ...props
                  }) {
-
+//TODO : Implement smallerMode option for all title sizes.
   return (
     <h3 className={`my-2 sm:my-4 lg:my-4 text-center uppercase 
     ${isSmallerMode ? 'text-lg xs:text-xl lg:text-xl' : 'text-xl xs:text-2xl lg:text-2xl'} 

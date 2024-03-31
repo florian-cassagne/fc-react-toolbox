@@ -1,5 +1,5 @@
 import React from "react";
-import {animationDefault} from "../../utils";
+import {animationDefault, colorTextImportantClass, colorTextImportantClassHover} from "../../utils";
 
 
 function TextLink({
@@ -12,7 +12,10 @@ function TextLink({
     <a href={href}
        className={className}
        {...props}>
-      <p className={'hover:scale-105 inline-block text-orange-200 hover:text-orange-400 ' + animationDefault}>
+      <p className={`hover:scale-105 inline-block 
+      ${colorTextImportantClass} 
+      ${colorTextImportantClassHover} 
+      ${animationDefault}`}>
         {children}
       </p>
     </a>

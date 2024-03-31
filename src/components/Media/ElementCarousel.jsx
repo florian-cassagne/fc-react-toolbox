@@ -19,7 +19,7 @@ export function updateCarouselItemsOpacity() {
   }
 }
 
-export const responsive = {
+export const defaultResponsive = {
   lg: {
     breakpoint: {
       max: 99999,
@@ -36,12 +36,12 @@ export const responsive = {
   }
 };
 
-function ElementCarousel({children, ...props}) {
+function ElementCarousel({children, responsive = null, ...props}) {
 
   window.addEventListener('resize', updateCarouselItemsOpacity);
 
   return (
-    <Carousel responsive={responsive}
+    <Carousel responsive={responsive || defaultResponsive}
               partialVisible
               containerClass="carousel"
               itemClass="carousel__item"

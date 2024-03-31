@@ -3,7 +3,7 @@ import React from "react";
 
 function IconLink({
                     image,
-                    link,
+                    href,
                     title = '',
                     alt = '',
                     target = '',
@@ -12,11 +12,11 @@ function IconLink({
                     ...props
                   }) {
   return (
-    <a className={`block w-12 mx-4 hover:scale-110 hover-darken 
+    <a className={`block w-12 mx-4 hover:scale-110 hover-darken cursor-pointer 
       ${animationDefault} 
       ${className}
       `}
-       href={link}
+       href={href}
        target={target}
        {...props}>
 

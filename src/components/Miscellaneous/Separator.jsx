@@ -2,7 +2,7 @@ import React from "react";
 
 
 function Separator({
-                     size = 4,
+                     size = 2,
                      className = '',
                      isVisible = true,
                      ...props

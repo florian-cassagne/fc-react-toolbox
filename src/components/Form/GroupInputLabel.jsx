@@ -1,6 +1,6 @@
 import React from "react";
 import Label from "./Label";
-import DivDefault from "../Content/DivDefault";
+import DivDefault from "../Container/DivDefault";
 
 
 function InputText({

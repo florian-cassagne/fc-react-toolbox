@@ -7,7 +7,7 @@ function ButtonLinkBig({
                          ...props
                        }) {
   return (
-    <ButtonLink className={`w-full md:!w-1/2 md:!mr-[25%] md:!ml-[25%] 
+    <ButtonLink className={`w-full md:w-1/2 md:mr-[25%] md:ml-[25%] 
     ${className}`} {...props}>
       {children}
     </ButtonLink>

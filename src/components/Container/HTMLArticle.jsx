@@ -1,21 +1,22 @@
 import React from "react";
-import {transitionFadeIn} from "../../utils/PropsAssets";
+import {transitionFadeIn} from "../../utils";
 
 
-function DivDefault({
+function HTMLArticle({
                       children,
                       className = '',
                       transitionEnabled = false,
                       ...props
                     }) {
+
   return (
-    <div className={'py-4 ' + className}
+    <article className={'py-4 ' + className}
          {...props}
          {...(transitionEnabled ? transitionFadeIn : {})}>
       {children}
-    </div>
+    </article>
   )
 }
 
 
-export default DivDefault;
+export default HTMLArticle;

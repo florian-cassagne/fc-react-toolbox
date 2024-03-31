@@ -1,15 +1,20 @@
 import Section from "./Section";
 import React from "react";
+import {colorPrimaryClass, colorPrimaryClassHover, colorSecondaryClass} from "../../utils";
 
 function ButtonNoLink({
                         children,
                         className = '',
-                        isColored = true,
+                        isColored = false,
                         ...props
                       }) {
   return (
     <Section className={`cursor-pointer 
-    ${className}`}
+    ${className}
+    ${isColored ?
+      colorPrimaryClass + ' ' + colorPrimaryClassHover
+      : colorSecondaryClass} 
+      `}
              isColored={isColored}
              {...props}>
       {children}

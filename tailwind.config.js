@@ -7,14 +7,20 @@ module.exports = {
   purge: {
     options: {
       safelist: [
+        'bg-white', "bg-black",
         {
-          pattern: /bg-*/,
+          pattern: /bg-(red|orange|green|cyan|blue|purple|neutral)-(50|100|200|300|400|500|600|700|800|900|950)/,
+          variants: ['hover'],
         },
         {
-          pattern: /my-*/,
+          pattern: /text-(red|orange|green|cyan|blue|purple|neutral)-(50|100|200|300|400|500|600|700|800|900|950)/,
+          variants: ['hover'],
         },
         {
-          pattern: /py-*/,
+          pattern: /my-[1-9]/,
+        },
+        {
+          pattern: /py-[1-9]/,
         }
       ]
     },

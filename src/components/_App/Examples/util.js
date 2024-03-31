@@ -1,0 +1,1 @@
+export const hrefFalseLink = 'javascript:alert("Test, close this box.")'

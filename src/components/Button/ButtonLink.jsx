@@ -1,4 +1,4 @@
-import {animationDefault, colorPrimary} from "../../utils";
+import {animationDefault, colorPrimaryClass, colorPrimaryClassHover, colorSecondaryClass} from "../../utils";
 import {transitionFadeIn} from "../../utils";
 import React from "react";
 
@@ -14,7 +14,9 @@ function ButtonLink({
   return (
     <button className={`rounded-full 
     ${isLarger ? 'my-4' : 'my-2'} 
-    ${isColored ? colorPrimary : ''} 
+    ${isColored ?
+      colorPrimaryClass + ' ' + colorPrimaryClassHover
+      : colorSecondaryClass} 
     ${animationDefault} 
     ${className}`}
             {...props}

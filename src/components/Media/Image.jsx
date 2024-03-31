@@ -1,4 +1,4 @@
-import {animationDefault} from "../../utils/StyleAssets";
+import {animationDefault} from "../../utils";
 import React from "react";
 
 function Image({
@@ -8,20 +8,22 @@ function Image({
                  target,
                  className = '',
                  classNameImage = '',
-                 isEnhancedMode = true,
+                 isFancyMode = true,
                  fullSize = false,
                  ...props
                }) {
-  classNameImage += (isEnhancedMode) ? 'w-[95%] hover:w-[99%] shadow-[0_0_5px_3px_rgba(255,255,255,0.3)] ' : ''
 
   return (
-    <div className={`flex justify-center 
+    <div className={`flex justify-center py-1
     ${animationDefault} 
     ${className} 
-    ${fullSize ? 'w-full' : ''}`}
+    ${fullSize ? 'w-full' : ''}
+    `}
          {...props}>
       <img src={src}
-           className={`${animationDefault} ${classNameImage}`}
+           className={`${animationDefault}
+           ${isFancyMode ? 'w-[95%] hover:w-[99%] shadow-[0_0_5px_3px_rgba(255,255,255,0.3)] ' : ''}
+           `}
            title={title}
            alt={alt}/>
     </div>

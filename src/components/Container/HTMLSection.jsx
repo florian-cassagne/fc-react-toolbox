@@ -1,13 +1,13 @@
 import React from "react";
 
 
-function SectionBig({
+function HTMLSection({
                       children,
                       className = '',
                       ...props
                     }) {
   return (
-    <section className={'py-16 sm:!py-24 lg:!py-32 ' + className}
+    <section className={'py-8 sm:py-12 lg:py-16 ' + className}
              {...props}>
       {children}
     </section>
@@ -15,4 +15,4 @@ function SectionBig({
 }
 
 
-export default SectionBig;
+export default HTMLSection;
